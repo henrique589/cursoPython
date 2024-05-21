@@ -18,7 +18,7 @@ except:
 Faça um programa que pergunte a hora ao usuário e, baseando-se no horário 
 descrito, exiba a saudação apropriada. Ex. 
 Bom dia 0-11, Boa tarde 12-17 e Boa noite 18-23.
-"""
+
 
 entrada_horario = input('Digite a hora para a saudação: ')
 
@@ -34,9 +34,20 @@ try:
         print('Hora desconhecida!')
 except:
     print('Não digitou um valor válido!')
+"""
 
 """
 Faça um programa que peça o primeiro nome do usuário. Se o nome tiver 4 letras ou 
 menos escreva "Seu nome é curto"; se tiver entre 5 e 6 letras, escreva 
 "Seu nome é normal"; maior que 6 escreva "Seu nome é muito grande". 
 """
+
+entrada_nome = input('Digite seu primeiro nome: ')
+tam_nome = len(entrada_nome)
+
+if (tam_nome <= 4):
+    print('"Seu nome é curto"')
+elif (tam_nome >= 5 and tam_nome <= 6):
+    print('"Seu nome é normal"')
+else:
+    print('"Seu nome é muito grande"')
