@@ -25,3 +25,24 @@ print(pessoa['nome'])
 
 for chave in pessoa:
     print(chave, pessoa[chave])"""
+
+## 
+##
+
+# Manioulando chaves e valores em dicionários
+
+pessoa = {}
+chave = 'nome_completo'
+pessoa[chave] = 'Henrique'
+pessoa['sobrenome'] = 'Azevedo'
+print(pessoa)
+
+print(pessoa[chave])
+pessoa[chave] = 'Ana'
+#del pessoa['sobrenome']
+print(pessoa) 
+
+if pessoa.get('sobrenome') is None:
+    print('NÃO EXISTE')
+else:
+    print(pessoa['sobrenome'])
