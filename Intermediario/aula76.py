@@ -59,15 +59,31 @@ else:
 # popitem - Apaga o último item adicionado
 # update - Atualiza um dicionário com outro
 
-pessoa = {
+"""pessoa = {
     'nome': 'Henrique',
     'sobrenome': 'Azevedo',
-}
+}"""
+
 # print(tuple(pessoa.keys()))
 # print(pessoa.values())
 # print(list(pessoa.items()))
 
 # for chave, valor in pessoa.items():
 #    print(chave, valor)
-pessoa.setdefault('idade', 0)
-print(pessoa['idade'])
+# pessoa.setdefault('idade', 0)
+# print(pessoa['idade'])
+import copy
+
+d1 = {
+    'c1': 1,
+    'c2': 2,
+    'l1': [0, 1, 2],
+}
+
+d2 = copy.deepcopy(d1)
+#d2 = d1.copy()
+
+d2['c1'] = 1000
+d2['l1'][1] = 9999
+print(d1)
+print(d2)
