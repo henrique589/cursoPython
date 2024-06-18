@@ -72,8 +72,8 @@ else:
 #    print(chave, valor)
 # pessoa.setdefault('idade', 0)
 # print(pessoa['idade'])
-import copy
-
+# import copy
+"""
 d1 = {
     'c1': 1,
     'c2': 2,
@@ -86,4 +86,21 @@ d2 = copy.deepcopy(d1)
 d2['c1'] = 1000
 d2['l1'][1] = 9999
 print(d1)
-print(d2)
+print(d2)"""
+
+p1 = {
+    'nome': 'Henrique',
+    'sobrenome': 'Azevedo',
+}
+#print(p1.get('nome', 'Não existe'))
+"""nome  = p1.pop('nome')
+print(nome, p1)"""
+# ultima_chave = p1.popitem()
+# print(ultima_chave)
+# print(p1)
+
+p1.update({
+    'nome': 'Ana',
+    'idade': 22
+})
+print(p1)
