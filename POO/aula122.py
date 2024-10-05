@@ -9,7 +9,8 @@ class Carro:
 
 fusca = Carro('Fusca')
 print(fusca.nome)
-fusca.acelerar()
+Carro.acelerar(fusca)
+#fusca.acelerar()
 
 celta = Carro('Celta')
 print(celta.nome)
