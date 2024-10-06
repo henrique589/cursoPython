@@ -3,7 +3,7 @@ class Pessoa:
     ano_atual = 2024
 
     def __init__(self, nome, idade):
-        self.nome = nome,
+        self.nome = nome
         self.idade = idade
 
     def get_ano_nascimento(self):
